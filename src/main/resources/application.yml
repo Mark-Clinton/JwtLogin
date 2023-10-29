@@ -1,5 +1,16 @@
 spring:
+  mail:
+    host: smtp.163.com
+    username: markclinton6666@163.com
+    password: FKYRTIEDGPSHVRJW
+  rabbitmq:
+    addresses: localhost
+    username: guest
+    password: guest
+    virtual-host: /
   security:
+    filter:
+      order: -100
     jwt:
       key: abcdefghijk
       expire: 7
