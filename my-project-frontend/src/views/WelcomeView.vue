@@ -10,7 +10,11 @@
           <div style="margin-top: 5px">Java学习平台，为你的编程之路保驾护航！全方位学习支持，助力技术进阶！</div>
       </div>
       <div class="right-card">
-          <router-view/>
+          <router-view v-slot="{ Component }">
+              <transition name="el-fade-in-linear" mode="out-in">
+                  <component :is="Component"/>
+              </transition>
+          </router-view>
       </div>
   </div>
 </template>
