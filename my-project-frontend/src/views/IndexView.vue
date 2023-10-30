@@ -1,6 +1,6 @@
 <template>
-  <div>
-      <el-button @click="userLogout">退出登录</el-button>
+  <div style="text-align: center">
+      <el-button @click="userLogout" style="margin-top: 270px" type="danger" plain>退出登录</el-button>
   </div>
 </template>
 
